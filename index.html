@@ -33,7 +33,7 @@
     <title>Zomato Landing Page Clone</title>
   </head>
   <body>
-    <section class="hero_section">
+    <section class="hero__section">
       <header>
         <nav class="navbar">
           <a href="#">Get the app</a>
@@ -49,14 +49,58 @@
         </nav>
       </header>
 
-      <div>
+      <div class="hero__section_container">
         <img src="./images/heroSectionLogo.png" alt="Zomato Logo" class="hero__section_logo" />
-        <h1>Discover the best food and drinks in India</h1>
-        <div>
-          <input class="input" type="text" placeholder="India" />
-          <input class="input" type="text" placeholder="Search for a restaurant, cuisine or a dish" />
+        <h1 class="hero__section_title">Discover the best food and drinks in India</h1>
+        <div class="hero__section_input_container">
+          <i class="fa-solid fa-location-dot" style="color: #fe3e3e;"></i>
+          <!-- <input class="input_container_location" type="text" placeholder="India" /> -->
+          <select name="Location" class="input_container_location">
+            <option>India</option>
+            <option>USA</option>
+            <option>Russia</option>
+            <option>UK</option>
+          </select>
+          <i class="fa-regular fa-magnifying-glass"></i>
+          <input class="input_container_search" type="text" placeholder="Search for a restaurant, cuisine or a dish" />
         </div>
       </div>
+    </section>
+
+    <section class="container we__offer">
+
+      <div class="we__offer_card">
+        <img src="./images/item1.png" alt="card 1 img">
+        <div class="we__offer_content">
+          <h2>Order online</h2>
+          <p>Stay home and order to your doorstep</p>
+        </div>
+      </div>
+
+      <div class="we__offer_card">
+        <img src="./images/item2.png" alt="card 2 img">
+        <div class="we__offer_content">
+          <h2>Dining</h2>
+          <p>View the city's favorite dining view</p>
+        </div>
+      </div>
+
+      <div class="we__offer_card">
+        <img src="./images/item3.png" alt="card 3 img">
+        <div class="we__offer_content">
+          <h2>Nightlife and clubs</h2>
+          <p>Explore the city's top nightlife and outlets</p>
+        </div>
+      </div>
+
+      <div class="we__offer_card">
+        <img src="./images/item4.png" alt="card 4 img">
+        <div class="we__offer_content">
+          <h2>Order online</h2>
+          <p>Stay home and order to your doorstep</p>
+        </div>
+      </div>
+
     </section>
   </body>
 </html>
