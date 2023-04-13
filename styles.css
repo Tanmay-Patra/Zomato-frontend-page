@@ -1,3 +1,4 @@
+/* This is for hero section */
 *{
     padding: 0;
     margin: 0;
@@ -164,6 +165,7 @@
     font-size: 12.5px;
 }
 
+/* This is for collection section */
 .collections h1{
     font-weight: 600;
 }
@@ -226,9 +228,9 @@
     border-radius: 10px;
     background: linear-gradient(
         0deg,
-        rgba(0,0,0,0.2) 0%,
-        rgba(0,0,0,0.2) 50%,
-        rgba(0,0,0,0.2) 85%
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0.2) 85%
     );
     z-index: 1;
 }
@@ -261,6 +263,7 @@
     width: 60%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
@@ -279,6 +282,7 @@
     flex: 3;
     height: 100%;
     display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -312,7 +316,7 @@
 
 .right .input_container{
     display: flex;
-    gap: 0.5;
+    gap: 0.5rem;
 }
 
 .input_container{
@@ -326,7 +330,7 @@
 
 .input_container input{
     flex: auto;
-    border: 1.5px solid gray;
+    border:  1.5px solid gray;
     outline: none;
     border-radius: 5px;
 }
@@ -359,4 +363,209 @@
     width: 35%;
 }
 
-/* Media queries for download apps */
+/* Media queries for download app section 
+From 0-1300px */
+@media only screen and (max-width: 1300px){
+    .get__the_app .semiContainer .left,
+    .get__the_app .semiContainer .right{
+        flex: 1;
+    }
+
+    .get__the_app .semiContainer{
+        width: 80%;
+    }
+}
+
+/* For screen 0-900px */
+@media only screen and (max-width: 900px){
+    .get__the_app{
+        padding: 2rem 0;
+    }
+    .get__the_app .semiContainer{
+        width: 95%;
+        flex-direction: column;
+    }
+}
+
+/* This is for explore options */
+.explore_options{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.explore_dropdown{
+    width: 100%;
+}
+
+.explore_options h1{
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 70px;
+}
+
+/* .explore_dropdown{
+    height: 300px;
+} */
+
+.explore_options .explore_dropdown{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 70px;
+    gap: 15px;
+}
+
+.explore_dropdown button{
+    display: flex;
+    width: 95%;
+    align-items: start;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    border-color: lightgray;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* This is for footer section */
+.footer{
+    width: 100%;
+}
+
+.footer_section1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footer_section1 img{
+    width: 130px;
+}
+
+.section1__buttonContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+/* .section1__buttonContainer #country{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+} */
+
+.section1__buttonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.navigation_container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.link__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link__container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: gray;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+
+.footer__link:hover{
+    color: black;
+}
+
+.section__links_container button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+
+    /* Not recomended because they are icons not texts but works fine */
+    /* color: white; */
+
+    cursor: pointer;
+}
+
+.section__links_container button i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+
+    /* horizontal or x-axis */
+    align-items: center; 
+
+    /* Vertical or y-axis */
+    justify-content: center;
+}
+
+.footer__section_logos{
+    width: 100%;
+}
+
+.disclaimer{
+    width: 95%;
+    color: gray;
+    margin: auto;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .navigation_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .navigation_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

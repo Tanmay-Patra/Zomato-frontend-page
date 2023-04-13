@@ -28,7 +28,7 @@
     />
 
     <!-- Importing styles.css -->
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
     <title>Zomato Landing Page Clone</title>
   </head>
@@ -157,30 +157,158 @@
         <div class="right">
           <h1>Get the Zomato App</h1>
           <p>We will send you a link, open it and download in your phone</p>
-        </div>
-        <div class="radio__button_container">
-          <div>
-            <input type="radio" id="email" name="download_app">
-            <label for="email" style="font-size: 14px;">Email</label>
+          <div class="radio__button_container">
+            <div>
+              <input type="radio" id="email" name="download_app">
+              <label for="email" style="font-size: 14px;">Email</label>
+            </div>
+            <div>
+              <input type="radio" id="phone" name="download_app">
+              <label for="phone" style="font-size: 14px;">Phone</label>
+            </div>
           </div>
-          <div>
-            <input type="radio" id="phone" name="download_app">
-            <label for="phone" style="font-size: 14px;">Phone</label>
-          </div>
-        </div>
 
-        <div class="input_container">
-          <input type="text" placeholder="Email">
-          <button>Share App Link</button>
-        </div>
-        <div class="download__app_container">
-          <h5>Download app from</h5>
-          <div>
-            <img src="./images/appleStore.png" alt="Apple Store">
-            <img src="./images/playStore.png" alt="Play Store">
+          <div class="input_container">
+            <input type="text" placeholder="Email">
+            <button>Share App Link</button>
+          </div>
+
+          <div class="download__app_container">
+            <h5>Download app from</h5>
+            <div>
+              <img src="./images/appleStore.png" alt="Apple Store">
+              <img src="./images/playStore.png" alt="Play Store">
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- This is for explore options -->
+    <section class="container explore_options">
+      <h1>Explore options near me</h1>
+      <div class="explore_dropdown">
+        <!-- Dropdowns don't have much customisations -->
+        <!-- <select name="explore" id="options_near_me">
+          <option value="1">Popular cuisines near me</option>
+        </select>
+        <select name="explore" class="options_near_me">
+          <option value="2">Popular restaurant types near me</option>
+        </select>
+        <select name="explore" class="options_near_me">
+          <option value="3">Top restaurant chains</option>
+        </select>
+        <select name="explore" class="options_near_me">
+          <option value="4">Cities we deliver to</option>
+        </select> -->
+        <button>
+          Popular cuisines near me
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <button>
+          Popular restaurant types near me
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <button>
+          Top restaurant chains
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <button>
+          Cities we deliver to
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- This is for the footer section -->
+    <footer class="container footer">
+      <div class="footer_section1">
+          <img src="./images/logo.png" alt="zomato logo" />
+          <div class="section1__buttonContainer">
+
+            <!-- Cannot enter image as a dropdown text -->
+            <!-- <select name="country" id="country">
+              <option value="India">
+                <img src="https://flagcdn.com/w40/in.png" alt="Indian Flag"  style="width: 15px"/>
+                India
+              </option>
+              <option value="russia">Russia</option>
+              <option value="usa">USA</option>
+              <option value="china">China</option>
+              <option value="uk">UK</option>
+            </select> -->
+
+              <button>
+                <img src="https://flagcdn.com/w40/in.png" alt="Indian Flag"  style="width: 15px"/>
+                India
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+
+              <button>
+                <i class="fa fa-globe"></i>
+                English
+              </button>
+          </div>
+      </div>
+      <div class="navigation_container">
+        <div class="link__container">
+          <h5>ABOUT ZOMATO</h5>
+          <a class="footer__link" href="#">Who we are</a>
+          <a class="footer__link" href="#">Blogs</a>
+          <a class="footer__link" href="#">Work with us</a>
+          <a class="footer__link" href="#">Investor Relations</a>
+          <a class="footer__link" href="#">Report Fraud</a>
+          <a class="footer__link" href="#">Contact Us</a>
+        </div>
+
+
+        <div class="link__container">
+          <h5>ZOMAVERSE</h5>
+          <a class="footer__link" href="#">Zomato</a>
+          <a class="footer__link" href="#">Blinkit</a>
+          <a class="footer__link" href="#">Feeding India</a>
+          <a class="footer__link" href="#">Hyperpure</a>
+          <a class="footer__link" href="#">Zomaland</a>
+        </div>
+
+
+        <div class="link__container">
+          <h5>FOR RESTAURANTS</h5>
+          <a class="footer__link" href="#">Partner With Us</a>
+          <a class="footer__link" href="#">Apps for You</a>
+          <br />
+          <h5>FOR ENTERPRISES</h5>
+          <a class="footer__link" href="#">Zomato For Work</a>
+        </div>
+
+
+        <div class="link__container">
+          <h5>LEARN MORE</h5>
+          <a class="footer__link" href="#">Privacy</a>
+          <a class="footer__link" href="#">Security</a>
+          <a class="footer__link" href="#">Terms</a>
+          <a class="footer__link" href="#">Sitemap</a>
+        </div>
+
+
+        <div class="link__container">
+            <h5>Social Media</h5>
+            <div class="section__links_container">
+                <button><i class="fa-brands fa-linkedin-in"></i></button>
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-twitter"></i></button>
+                <button><i class="fa-brands fa-facebook"></i></button>
+                <button><i class="fa-brands fa-youtube"></i></button>
+            </div>
+            <br />
+            <img src="./images/appleStore.png" alt="apple store" class="footer__section_logos" />
+            <img src="./images/playStore.png" alt="play store" class="footer__section_logos" />
+        </div>
+      </div>
+      <div class="disclaimer">
+        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies.
+        All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.
+      </div>
+  </footer>
   </body>
 </html>
