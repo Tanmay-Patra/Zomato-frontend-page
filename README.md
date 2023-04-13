@@ -3,3 +3,5 @@
 ## Done with first commit
 
 Now editing in github
+
+setup created for the repository
